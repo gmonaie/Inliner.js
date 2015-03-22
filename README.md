@@ -1,3 +1,7 @@
+# Inliner.js
+
+Inliner.js is built on top of a fork of Autolinker.js (documentation below). 
+
 # Autolinker.js
 
 Because I had so much trouble finding a good autolinking implementation out in the wild, I decided to roll my own. It 
