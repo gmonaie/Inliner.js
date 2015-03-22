@@ -137,7 +137,12 @@ Autolinker.Util = {
 		    match;
 		
 		while( match = splitRegex.exec( str ) ) {
-			result.push( str.substring( lastIdx, match.index ) );
+			var smallstr = str.substring( lastIdx, match.index );
+
+			if (smallstr.length > 0) {
+				result.push( str.substring( lastIdx, match.index ) );
+			}
+			
 			result.push( match[ 0 ] );  // push the splitting char(s)
 			
 			lastIdx = match.index + match[ 0 ].length;
